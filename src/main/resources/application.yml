@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://rptmffld0204_db_user:QqnOMzDNYZD7rYOE@cluster0.79fxv9h.mongodb.net/?appName=Cluster0
+      database: my_mongo_db
