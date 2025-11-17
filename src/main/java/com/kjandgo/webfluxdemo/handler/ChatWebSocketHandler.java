@@ -50,7 +50,7 @@ public class ChatWebSocketHandler implements WebSocketHandler {
                                 chatService.history(roomId),    // 과거 메시지
                                 sink.asFlux()                   // 실시간 메시지
                         )
-                        .map(message -> session.textMessage(message.getSender() + " - " +  message.getMessage()));
+                        .map(message -> session.textMessage(message.getSender() + " - " +  message.getMessage()));  // 메세지 생성
 
         Mono<Void> outputSend = session.send(output);
 
